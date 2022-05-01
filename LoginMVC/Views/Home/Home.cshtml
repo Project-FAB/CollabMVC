@@ -1,0 +1,51 @@
+﻿
+@{
+    Layout = null;
+}
+@model LoginMVC.Models.AccountInfo
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Welcome</title>
+    <link href="~/myMaterials/Themes/Client02/Styles/theme.css" rel="stylesheet" type="text/css" />
+    <link href="~/myMaterials/Themes/Client02/Styles/Landingpage.css" rel="stylesheet" type="text/css" />
+    <script src="~/myMaterials/js/jquery-1.9.1.js"></script>
+    <script src="~/myMaterials/js/jquery-ui-1.10.3.custom.js"></script>
+    <script src="~/myMaterials/js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="~/myMaterials/js/FutureJScript.js"></script>
+
+</head>
+<body>
+    <!---Header Div-->
+    <div name="headerwise" class="headerbar">
+
+    </div>
+    <!---End Header Div--->
+    <!---Wise Logo Div-->
+    <div class="wiselogo"></div>
+    <!---End Wise Logo Div-->
+    <!--User Detail Div-->
+    <div class="userdetail">
+        <div class="userlbl">
+            &nbsp
+            <asp:Label ID="lblUsername" runat="server" style="position: relative; top: 6px; margin-left: 175px;">WELCOME</asp:Label>
+            <font class="wisefont" style="position: relative; top:6px;">&nbsp : &nbsp</font>
+            <asp:label id="lblEMPNAME" runat="server" style="position: relative; top: 6px; "> @Model.accountID</asp:label>
+            <asp:label id="lblEMPNAME" runat="server" style="position: relative; top: 6px; "> @Model.sessionID</asp:label>
+        </div>
+        <!--Sign Out Div-->
+        <a>
+            <div class="signoutbutton" onclick="mainclose">
+                <asp:LinkButton ID="LinkButton1" runat="server" CssClass="signout"> @Html.ActionLink("Sign Out", "Logout", "Login")</asp:LinkButton>
+            </div>
+        </a>
+        <!--End Sign Out Div-->
+    </div>
+    <table class="tTable" style="width:50% ; height:50% ; padding-top: 100px">
+        @Html.Raw(@Session["Datatable"])
+        
+    </table>
+</body>
+</html>

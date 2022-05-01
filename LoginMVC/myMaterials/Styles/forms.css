@@ -1,0 +1,80 @@
+/* CSS Document */
+
+
+h1.f_title {
+	font-size:24px;
+	margin-bottom:20px;
+}
+h2.f_title {
+	font-size:16px;
+	margin-bottom:20px;
+	color:#FF6600
+}
+.f_row {
+	padding-bottom:13px;
+	clear:both;
+}
+.f_row label, .f_row_v label {
+	display:block;
+	font-size:13px;
+	width:180px;
+}
+.f_row_v label {
+	padding-bottom:4px;
+}
+.f_row label, .f_row div {
+	float:left;
+}
+.f_row p {
+	clear:both;
+	display:block;
+	color:#ff0000;
+	font-size:14px;
+}
+.f_row input, .f_row_v input {
+	margin-right:5px;
+    color: #000000;
+}
+/*.f_row select, .f_row_v select {
+	margin-right:2px;
+}
+*/
+/* radio */
+.opt_rdo_title 
+{
+    display:inline-block;
+	font-size:13px;
+	float:left;
+	width:600px;
+
+}
+.f_row_opt ul li {
+    float:left;
+    font-size:13px;
+}
+.rdo_sep { float:left }
+.rdo_sep input
+{
+    margin-right:5px;
+}
+.rdo_sep label
+{
+    margin-right:15px;
+}
+
+
+
+/* validation */
+.ctrl_val_summary {
+	display:none;
+	padding:10px;
+	border:1px solid #ccc;
+	background:#e4e4e4;
+	margin-bottom:20px;
+}
+
+/* Width */
+.f_50 { width:50px }
+.f_100 { width:100px }
+.f_200 { width:200px }
+.f_400 { width:400px }

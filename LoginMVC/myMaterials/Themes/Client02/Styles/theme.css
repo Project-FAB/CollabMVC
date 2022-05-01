@@ -1,0 +1,426 @@
+/* CSS Document */
+
+.wr_header {
+	background:url(../Images/bg_header.png) repeat-x;
+}
+.wr_header_extra {
+	background:url(../Images/bg_logo_extra.png) no-repeat;
+}
+
+.hdr_second_nav {
+	background:url(../Images/bg_second_nav.png) repeat-x;
+}
+
+
+/* Client Logo */
+.ctrl_client_logo a {
+	background:url(../Images/bg_login.png) no-repeat;
+	width:50px;
+	height:44px;
+	display:block;
+	margin-left:90px;
+	margin-top:5px;
+}
+
+/* CCB-Control Bar */
+.ccb_02 {
+	background:url(../Images/ctrl_bar_02.png) repeat-x;
+}
+.ccb_04 {
+	background:url(../Images/ctrl_bar_04.png) repeat-x;
+	color:#444;
+}
+.ccb_05 {
+	background:url(../Images/ctrl_bar_05.png) no-repeat;
+	width:90px;
+}
+.ccb_05 a {
+	color:#444;
+	font-size:12px;
+	text-decoration:none;
+	display:block;
+	width:50px;
+	padding-top:4px;
+	padding-bottom:5px;
+	margin-left:25px;
+}
+
+/* Top Nav */
+.ctrl_topNav a {
+	color:#444;
+	background:url(../Images/bg_top_nav_default.png) repeat-x;
+}
+.ctrl_topNav a.selected {
+	color:#fff;
+	background:#FF6600 url(../Images/bg_top_nav_selectedx.png) repeat-x;
+}
+.ctrl_topNav a:hover {
+	color:#fff;
+	background:url(../Images/bg_top_nav_selected.png) repeat-x;
+}
+
+/* Secondrary Nav */
+.ctrl_secdNav a {
+	color:#fff;
+}
+.ctrl_secdNav a:hover {
+	color:#000;
+	background:#2abdf9;
+}
+
+/* Forms */
+.db_grid {
+	border:0px solid #dadada;
+	margin-bottom:15px;
+	clear:both;
+    text-align: left;
+}
+.db_grid td, .db_grid th {
+	border:1px solid #d3d3d3;
+	border-collapse:collapse;
+	font-size:13px;
+	text-align:left;
+}
+.db_grid th {
+	background:url(../Images/bg_second_nav.png) repeat-x;
+	padding:8px 5px 8px 5px;
+	color:#fff;
+}
+.db_grid td {
+	padding:5px 5px 4px 5px;
+	color:#333;	
+}
+.db_grid tr.alt {
+	background:#f0f0f0 url(../Images/grid_data_altx.png) repeat-x;
+}
+td.a_right, th.a_right {
+	text-align:right;
+}
+td.a_cen, th.a_cen {
+	text-align:center;
+}
+.ctrl_Footer {
+	background:#999;
+}
+.ctrl_Footer td
+{
+	background:#999;
+	border:0px;
+}
+/* Secondrary Navigation */
+.ctrl_secdNavigation {
+	margin-top:8px;
+}
+
+.ctrl_secdNavigation ul{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+/*Top level list items*/
+	.ctrl_secdNavigation ul li{
+	position: relative;
+	display: inline;
+	float: left;
+}
+
+/*Top level menu link items style*/
+.ctrl_secdNavigation ul li a{
+	display: block;
+	padding: 4px 14px 7px 11px;
+	border-left-width: 0;
+	text-decoration: none;
+	font-size:12px;
+	color:#fff;
+	text-decoration:none;
+}
+	
+/*1st sub level menu*/
+.ctrl_secdNavigation ul li ul{
+	left: 0;
+	position: absolute;
+	top: 1em; /* no need to change, as true value set by script */
+	display: block;
+	visibility: hidden;
+
+}
+
+/*Sub level menu list items (undo style from Top level List Items)*/
+.ctrl_secdNavigation ul li ul li{
+	display: list-item;
+	float: none;
+}
+
+/*All subsequent sub menu levels offset after 1st level sub menu */
+.ctrl_secdNavigation ul li ul li ul{ 
+	left: 159px; /* no need to change, as true value set by script */
+	top: 0;
+}
+
+/* Sub level menu links style */
+.ctrl_secdNavigation ul li ul li a{
+	display: block;
+	width: 160px; /*width of sub menu levels*/
+	text-decoration: none;
+	padding: 5px 5px;
+	font-size:12px;
+	color:#333;
+}
+
+.m_sub {
+	background:#fff url(../Images/bg_flyover.png) bottom repeat-x;
+	border-top:1px solid #333;
+	border-left:1px solid #333;
+	border-right:1px solid #333;	
+	border-bottom:1px solid #333;	
+}
+
+.m_sub a:hover {
+	background:#e4e4e4 !important;
+}
+
+.ctrl_secdNavigation ul li a:hover{
+	background-color: #fff;
+	color: #333;
+}
+
+/*Background image for top level menu list links */
+.ctrl_secdNavigation .mainfoldericon{
+	background: url(../Images/arr_dwn.png) no-repeat center right;
+}
+
+/*Background image for subsequent level menu list links */
+.ctrl_secdNavigation .subfoldericon{
+	background: url(../Images/arr_right.png) no-repeat center right;
+}
+
+* html p#iepara{ /*For a paragraph (if any) that immediately follows suckertree menu, add 1em top spacing between the two in IE*/
+	padding-top: 1em;
+}
+	
+/* Holly Hack for IE \*/
+* html .ctrl_secdNavigation ul li { float: left; height: 1%; }
+* html .ctrl_secdNavigation ul li a { height: 1%; }
+
+
+/* Buttons */
+.btn {
+	font-size:12px;
+	color:#fff;
+	padding:5px 12px;
+	cursor:pointer;
+	font-family:"Segoe UI";
+}
+.btn_reg {
+	background:#444;
+	border:1px solid #444;
+}
+.btn_del {
+	background:#FF6600;
+	border:1px solid #ff8400;	
+}
+
+
+/* Login */
+.wr_login {
+	border:0px solid #999;
+	background:url(../Images/bg_login.png) no-repeat;
+}
+.bx_form_login label {
+	color:#555;
+}
+.bx_static {
+	color:#555;
+}
+.bx_form_inp {
+	color:#777;	
+}
+.login_title {
+	color:#555;
+}
+.forgot_pw {
+	color:#0783c7;
+}
+.btm_login {
+	background:url(../Images/btn_reg.png) repeat;
+	border:1px solid #838383;
+	padding-left:35px;
+	padding-right:35px;
+}
+
+
+.btm_search {
+	background:url(../Images/bg_tabs_jq.png) repeat-x;
+	border:1px solid #838383;
+	padding-left:10px;
+	padding-right:10px;
+}
+
+
+.btnsearch {
+	font-size:12px;
+	color:#fff;
+	padding:3px 12px;
+	cursor:pointer;
+	font-family:"Segoe UI";
+}
+/* Tabs */
+ul.tabs
+{
+    margin: 0;
+    padding: 0;
+    float: left;
+    list-style: none;
+    height: 32px; /*--Set height of tabs--*/
+    border-bottom: 1px solid #999;
+    border-left: 1px solid #999;
+    width: 100%;
+}
+ul.tabs li {
+	float: left;
+	margin: 0;
+	padding: 0;
+	height: 31px; /*--Subtract 1px from the height of the unordered list--*/
+	line-height: 31px; /*--Vertically aligns the text within the tab--*/
+	border: 1px solid #999;
+	border-left: none;
+	margin-bottom: -1px; /*--Pull the list item down 1px--*/
+	overflow: hidden;
+	position: relative;
+	background:url(../Images/bg_tabs_jq.png);
+}
+ul.tabs li a {
+	text-decoration: none;
+	color: #ffffff;
+	display: block;
+	font-size: 13px;
+	padding: 0 20px;
+	border: 0px solid #fff; /*--Gives the bevel look with a 1px white border inside the list item--*/
+	outline: none;
+}
+ul.tabs li a:hover {
+	background:url(../Images/bg_header.png)	
+}
+html ul.tabs li.active, html ul.tabs li.active a:hover  { /*--Makes sure that the active tab does not listen to the hover properties--*/
+	background: #fff;
+	color:#333;
+	border-bottom: 1px solid #fff; /*--Makes the active tab look like it's connected with its content--*/
+}
+ul.tabs li.active a {
+	color:#333;
+}
+.tab_container {
+	border: 1px solid #999;
+	border-top: none;
+	overflow: hidden;
+	clear: both;
+	float: left; width: 100%;
+	background: #fff;
+	margin-bottom:30px;
+}
+.tab_content {
+	padding: 20px;
+	font-size: 1.2em;
+}
+
+/*Added By Lakshman for the dash board*/
+.dsb_grid {
+	border:0px solid #dadada;
+	margin-bottom:15px;
+	clear:both;
+}
+.dsb_grid td, .dsb_grid th {
+	border:1px solid #d3d3d3;
+	border-collapse:collapse;
+	font-size:9px;
+	text-align:left;
+}
+.dsb_grid th {
+	background:url(../Images/bg_second_nav.png) repeat-x;
+	padding:8px 5px 8px 5px;
+	color:#fff;
+}
+.dsb_grid td {
+	padding:5px 5px 4px 5px;
+	color:#333;
+}
+/*Added By Lakshman for the dash board*/
+.dsb_grid {
+	border:0px solid #dadada;
+	margin-bottom:15px;
+	clear:both;
+}
+td.a_right, th.a_right {
+	text-align:right;
+}
+td.a_cen, th.a_cen {
+	text-align:center;
+}
+.dsb_ctrl_Footer {
+	background:#999;
+}
+.dsb_ctrl_Footer td
+{
+	background:#999;
+	border:0px;
+}
+
+/*End  Dash board data grid */
+
+/* Custom Data Grid */
+.cdb_grid {
+	border:0px solid #dadada;
+	margin-bottom:15px;
+	clear:both;
+}
+.cdb_grid td, .cdb_grid th {
+	border:1px solid #d3d3d3;
+	border-collapse:collapse;
+	font-size:10px;
+	text-align:left;
+}
+.cdb_grid th {
+	/*background:url(../Images/bg_second_nav.png) repeat-x;*/
+	padding:8px 5px 8px 5px;
+	color:#fff;
+}
+.cdb_grid td {
+	padding:5px 5px 4px 5px;
+	color:#333;
+}
+
+/*End  Dash board data grid */
+
+/* Custom Data Grid */
+.cdb_grid {
+	border:0px solid #dadada;
+	margin-bottom:15px;
+	clear:both;
+}
+td.a_right, th.a_right {
+	text-align:right;
+}
+td.a_cen, th.a_cen {
+	text-align:center;
+}
+
+
+.CaptionCssStyle
+{
+    /*color: #1f5ca9;
+background-color: #c5d4e6;*/
+    color: #000000;
+    background: url(../Images/bg_top_nav_selectedx.png) repeat-x;
+    background-color: #EFEFEF;
+}
+
+.CaptionCssStyle th, .CaptionCssStyle td
+{
+    border:1px solid #d3d3d3;
+	border-collapse:collapse;   
+	color:#000000;
+	font-size:13px;
+}
+
+.textarea { font-size: 13px } 
